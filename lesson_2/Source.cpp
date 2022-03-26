@@ -43,6 +43,36 @@ int main()
 	float celsius = (degree - 32) * (5.0 / 9);
 	cout << "Degree (°C): " << celsius << "°C\n";
 
+
+	// Логічні оператори: > < >= <= != ==
+	
+	// Логічний блок if:
+	// if (expression)
+	// {
+	//	  body (code)
+	// }
+
+	if (5 >= 5) 
+	{
+		cout << "True\n";
+	}
+
+	// Завдання: визначення чи є прямокутник квадратом
+	cout << "Enter the sides of the rectangle...\n";
+
+	float a = 0, b = 0;
+	cout << "Enter width: "; cin >> a;
+	cout << "Enter height: "; cin >> b;
+
+	if (a == b)
+	{
+		cout << "This rectangle is a square!" << endl;
+	}
+	else
+	{
+		cout << "This rectangle is not a square!" << endl;
+	}
+
 	system("pause"); // пауза, для продовження потрібно натиснути будь-яку клавішу
 	return 0;
 }
