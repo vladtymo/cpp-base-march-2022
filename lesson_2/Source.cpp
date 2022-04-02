@@ -22,6 +22,7 @@ int main()
 
 	// int - тип цілих чисел (від -2,147,483,648 до 2,147,483,647) розміром 4 байти
 
+	// ім'я змінної може містити наступні символи: A-Z a-z 0-9 _ (не може починатися з цифри)
 	int width;		// не ініціалізована змінна, яка містить "мусор" (поганий приклад написання)
 	int height = 2; // створення з ініціалізацією
 
@@ -42,36 +43,6 @@ int main()
 
 	float celsius = (degree - 32) * (5.0 / 9);
 	cout << "Degree (°C): " << celsius << "°C\n";
-
-
-	// Логічні оператори: > < >= <= != ==
-	
-	// Логічний блок if:
-	// if (expression)
-	// {
-	//	  body (code)
-	// }
-
-	if (5 >= 5) 
-	{
-		cout << "True\n";
-	}
-
-	// Завдання: визначення чи є прямокутник квадратом
-	cout << "Enter the sides of the rectangle...\n";
-
-	float a = 0, b = 0;
-	cout << "Enter width: "; cin >> a;
-	cout << "Enter height: "; cin >> b;
-
-	if (a == b)
-	{
-		cout << "This rectangle is a square!" << endl;
-	}
-	else
-	{
-		cout << "This rectangle is not a square!" << endl;
-	}
 
 	system("pause"); // пауза, для продовження потрібно натиснути будь-яку клавішу
 	return 0;
